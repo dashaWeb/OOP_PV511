@@ -41,7 +41,7 @@ Food::Food(const Food& other) // deep copy
 
 void Food::operator=(const Food& other)
 {
-	if (this == &other) // a == b
+	if (this == &other) // a == a
 		return;
 
 	setName(other.name);
