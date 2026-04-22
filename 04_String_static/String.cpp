@@ -48,16 +48,22 @@ void String::input()
 	size_t i = 0;
 	while (true)
 	{
-		if (i == size - 1)
-		{
-
-		}
-
 		c = _getch();
 		if (c == 13)
 			break;
+		if (i == size - 1)
+		{
+			auto tmp = new char[size * 2] {};
+			strcpy_s(tmp, size, this->str);
+			delete []this->str;
+			this->size = size * 2;
+			this->str = tmp;
+		}
+
+		std::cout << (char)c;
 		this->str[i++] = c;
 	}
+	this->str[i] = '\0';
 }
 
 void String::print() const
