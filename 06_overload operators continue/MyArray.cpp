@@ -109,3 +109,20 @@ MyArray::operator int() const
 	}
 	return sum;
 }
+
+std::istream& operator>>(std::istream& in, MyArray& obj)
+{
+
+	for (size_t i = 0; i < 5; i++)
+	{
+	
+	}
+}
+
+std::ostream& operator<<(std::ostream& out, const MyArray& obj)
+{
+	for (size_t i = 0; i < 5; i++)
+	{
+
+	}
+}

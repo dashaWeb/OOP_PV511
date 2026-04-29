@@ -1,5 +1,5 @@
 #pragma once
-
+#include <iostream>
 class MyArray
 {
 public:
@@ -13,8 +13,8 @@ public:
 	size_t getSize() const;
 	void print() const;
 
-	int operator[](size_t index) const; // read
-	int& operator[](size_t index); // write
+	//int operator[](size_t index) const; // read
+	int& operator[](size_t index); // write and read
 
 	MyArray operator()(size_t startIndex, size_t lastIndex) const;
 
@@ -24,6 +24,9 @@ private:
 	bool isValidIndex(size_t index) const;
 	int* arr = nullptr;
 	size_t size = 0;
+
+	friend std::istream& operator >>(std::istream& in, MyArray& obj); // cin >> obj
+
 };
 
 inline size_t MyArray::getSize() const
@@ -34,3 +37,5 @@ inline bool MyArray::isValidIndex(size_t index) const
 {
 	return index < size;
 }
+
+inline std::ostream& operator <<(std::ostream& out, const MyArray& obj); // cout << obj
