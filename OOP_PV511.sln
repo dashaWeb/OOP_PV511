@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08_template class", "08_tem
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_dynamict data struct_ STACK", "09_dynamict data struct_ STACK\09_dynamict data struct_ STACK.vcxproj", "{88570867-A212-46A9-90E1-7A6ACF77AB5B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_Dynamic data struct _ singly list", "10_Dynamic data struct _ singly list\10_Dynamic data struct _ singly list.vcxproj", "{19BDCB15-4FB6-4238-86E7-B20A31D3261B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{88570867-A212-46A9-90E1-7A6ACF77AB5B}.Release|x64.Build.0 = Release|x64
 		{88570867-A212-46A9-90E1-7A6ACF77AB5B}.Release|x86.ActiveCfg = Release|Win32
 		{88570867-A212-46A9-90E1-7A6ACF77AB5B}.Release|x86.Build.0 = Release|Win32
+		{19BDCB15-4FB6-4238-86E7-B20A31D3261B}.Debug|x64.ActiveCfg = Debug|x64
+		{19BDCB15-4FB6-4238-86E7-B20A31D3261B}.Debug|x64.Build.0 = Debug|x64
+		{19BDCB15-4FB6-4238-86E7-B20A31D3261B}.Debug|x86.ActiveCfg = Debug|Win32
+		{19BDCB15-4FB6-4238-86E7-B20A31D3261B}.Debug|x86.Build.0 = Debug|Win32
+		{19BDCB15-4FB6-4238-86E7-B20A31D3261B}.Release|x64.ActiveCfg = Release|x64
+		{19BDCB15-4FB6-4238-86E7-B20A31D3261B}.Release|x64.Build.0 = Release|x64
+		{19BDCB15-4FB6-4238-86E7-B20A31D3261B}.Release|x86.ActiveCfg = Release|Win32
+		{19BDCB15-4FB6-4238-86E7-B20A31D3261B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
