@@ -18,10 +18,15 @@ class FwdList
 {
 public:
 	FwdList() = default;
+	FwdList(Node<T>* head)
+		:head{ head } {
+	}
 	void addHead(const T& data);
+	void addTail(const T& data);
 	void print() const;
 	void removeHead();
 	bool isEmpty() const;
+	Node<T>* operator+(const FwdList& other) const;
 private:
 	Node<T>* head = nullptr;
 	Node<T>* tail = nullptr;
@@ -36,6 +41,20 @@ inline void FwdList<T>::addHead(const T& data)
 	if (isEmpty())
 		tail = tmp;
 	++size;
+}
+
+template<typename T>
+inline void FwdList<T>::addTail(const T& data)
+{
+	auto tmp = new Node<T>(data);
+	++size;
+	if (isEmpty())
+	{
+		head = tail = tmp;
+		return;
+	}
+	tail->next = tmp;
+	tail = tmp;
 }
 
 template<typename T>
@@ -74,4 +93,22 @@ inline bool FwdList<T>::isEmpty() const
 {
 	return head == nullptr;
 	//return size == 0;
+}
+
+template<typename T>
+inline Node<T>* FwdList<T>::operator+(const FwdList& other) const
+{
+	FwdList<T> newFwList;
+	auto tmp = this->head;
+	while (tmp != nullptr) {
+		newFwList.addTail(tmp->data);
+		tmp = tmp->next;
+	}
+
+	tmp = other.head;
+	while (tmp != nullptr) {
+		newFwList.addTail(tmp->data);
+		tmp = tmp->next;
+	}
+	return newFwList.head;
 }

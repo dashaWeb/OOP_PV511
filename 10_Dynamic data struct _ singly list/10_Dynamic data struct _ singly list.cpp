@@ -22,6 +22,20 @@ int main()
 	list.addHead(200);
 	list.addHead(300);
 	list.print();
+	
+	FwdList<int> list11;
+	list11.addHead(10);
+	list11.addHead(152);
+	list11.addHead(15);
+	FwdList<int> list12;
+	list12.addHead(102);
+	list12.addHead(100);
+	list12.addHead(152);
+
+	Node<int>* list33;
+	list33 = list11 + list12;
+	FwdList<int> list_3(list33);
+	list_3.print();
 }
 
 // Додати до існуючого класу :
