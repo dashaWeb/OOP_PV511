@@ -8,6 +8,7 @@ Lion::Lion(const string& place, const size_t& age, bool isAlone)
 	//setPlace(place);
 	//this->isAlone = isAlone;
 	std::cout << ">>>> Ctor Lion id --> " << id << std::endl;
+	
 }
 
 void Lion::print() const

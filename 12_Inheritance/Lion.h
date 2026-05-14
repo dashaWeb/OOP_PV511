@@ -1,6 +1,6 @@
 #pragma once
 #include "Animal.h"
-class Lion : public Animal
+class Lion : protected Animal
 {
 public:
 	Lion(const string& place = "Africa", const size_t& age = 0, bool isAlone = false);
@@ -11,10 +11,10 @@ private:
 };
 
 
-//class LionWhite : public Lion {
-//public:
-//	LionWhite()
-//	{
-//		this->
-//	}
-//};
+class LionWhite : public Lion {
+public:
+	LionWhite()
+	{
+		
+	}
+};

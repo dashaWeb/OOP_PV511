@@ -14,6 +14,9 @@ int main()
 
 	Lion lion("Africa", 5, false);
 	lion.print();
+	
+	LionWhite lion2;
+	
 	Wolf wolf;
 	wolf.print();
 	
