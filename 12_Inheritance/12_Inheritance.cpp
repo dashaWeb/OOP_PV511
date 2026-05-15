@@ -20,11 +20,11 @@ int main()
 	Wolf wolf;
 	wolf.print();
 	
-	/*vector<Animal*> arr{ (Animal*)&lion, (Animal*)&wolf };
+	vector<Animal*> arr{ (Animal*)&lion, (Animal*)&wolf };
 	for (size_t i = 0; i < arr.size(); i++)
 	{
 		arr[i]->print();
-	}*/
+	}
 
 }
 
