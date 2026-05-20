@@ -8,6 +8,9 @@ public:
 	void print() const override; // перекриття приховування методу із базового класу
 	void eat() const override;
 	void move() const override;
+	void test() {
+		cout << "Test method Lion" << endl;
+	}
 	~Lion();
 private:
 	bool isAlone = true;
