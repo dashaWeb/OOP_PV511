@@ -31,7 +31,7 @@ int main()
         zoo[i]->print();
         zoo[i]->eat();
         zoo[i]->move();
-        zoo[i]->
+        
         cout << "---------------" << endl;
     }
 
